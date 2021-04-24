@@ -15,7 +15,6 @@ export default function AddMovie() {
     const handleSubmit=(e)=>{
         e.preventDefault();
         if(addmovie.name===''){
-            console.log("empty name")
             setErr(prev=>({...prev,nameerr:"Please enter movie name !"}));
         }
         else if(addmovie.price===''){
